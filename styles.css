@@ -1,0 +1,94 @@
+body {
+  background-color: #d3d3d3;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 10px;
+}
+
+header, footer{
+  background-color: #36454f;
+  color: white;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  #expense-form {
+    width: 90vw !important;
+  }
+  #expenses {
+    width: 90vw !important;
+    max-width: 90% !important;
+  }
+  #actions button {
+    margin: 30px 0;
+  }
+}
+
+h2 {
+  padding: 10px 0;
+}
+
+.btn-default {
+  background-color: #36454f;
+  color: white;
+}
+
+#expense-form {
+  width: 30vw;
+}
+
+.expense-form {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.expense-form label {
+  font-weight: bold;
+}
+
+input, .expense-form button {
+  margin: 10px 0px;
+}
+
+.expense-form button:hover {
+  background-color: #36454f;
+  opacity: 0.8;
+  color: white;
+}
+
+#expenses {
+  max-width: 70vw;
+  width: 60vw;
+}
+
+#actions {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 10px;
+}
